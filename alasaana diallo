@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ma page perso</title>
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: darkblue;
+        }
+        img {
+            width: 200px;
+            border-radius: 50%;
+        }
+        a {
+            color: darkred;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            color: orange;
+        }
+        #message {
+            margin-top: 20px;
+            font-size: 18px;
+            color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bienvenue sur ma page</h1>
+    <img src="https://via.placeholder.com/200" alt="Ma photo">
+    <p>Salut, je m'appelle Alassana et j'apprends à créer mon premier site web 😄.</p>
+    <p>J'aime le football, le Real Madrid, et apprendre de nouvelles choses.</p>
+    <a href="https://www.realmadrid.com/fr" target="_blank">Voir mon équipe préférée</a>
+
+    <div id="message"></div>
+
+    <script>
+        // Demander le nom de l'utilisateur
+        let nom = prompt("Comment tu t'appelles ?");
+        
+        // Afficher un message personnalisé
+        if (nom) {
+            document.getElementById("message").innerText = "Bonjour " + nom + " 👋, bienvenue sur le site d'Alassana !";
+        } else {
+            document.getElementById("message").innerText = "Bonjour invité 👋, bienvenue sur le site d'Alassana !";
+        }
+    </script>
+</body>
+</html>
